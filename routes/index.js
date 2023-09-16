@@ -1,13 +1,16 @@
 var express = require('express');
 var router = express.Router();
+const apiService = require('../services');
 
-/* GET home page. */
-router.get('/', function (req, res, next) {
-  const data = {
-    title: 'Texas, baby!',
-    quote: 'He go Lionel Messi, I go Tom Brady!',
-  };
-  res.render('index', { data });
+router.get('/', async function (req, res, next) {
+  const { slip } = await apiService.getAdvice();
+
+  res.render('index', {
+    data: {
+      title: `#${slip.id}`,
+      quote: slip.advice,
+    },
+  });
 });
 
 module.exports = router;
