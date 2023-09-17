@@ -1,8 +1,62 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  box-sizing: border-box;
 }
 
-a {
-  color: #00B7FF;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font: 14px "Manrope", Helvetica, Arial, sans-serif;
+  background-color: #1f2633;
+  margin: 10px auto;
+}
+
+#container,
+#card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container {
+  background-color: #313A48;
+  border-radius: 16px;
+  max-width: 540px;
+  position: relative;
+}
+
+#card {
+  padding: 48px;
+  margin-bottom: 40px;
+  gap: 40px;
+}
+
+.title {
+  font-family: 'Manrope', sans-serif;
+  color: #53FFAA;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 4.09px;
+}
+
+#shuffle-box {
+  position: absolute;
+  bottom: -32px;
+}
+
+#shuffle-box:hover {
+  cursor: pointer;
+}
+
+#quote-box {
+  height: 170px;
+}
+
+.quote {
+  font-family: 'Manrope', sans-serif;
+  color: #CEE3E9;
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.36;
+  letter-spacing: -0.3px;
 }
