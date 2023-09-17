@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/src/public/favicon.ico" type="image/x-icon" />
     <title>Guapanese</title>
   </head>
   <body>
     <div id="container">
       <div id="title-box">
-        <h2 class="title"><%= data.title %></h2>
+        <h2 class="title">Advice #000</h2>
       </div>
       <div id="quote-box">
-        <p class="quote"><%- data.quote %></p>
+        <p class="quote">Love is the greatest!</p>
       </div>
       <div id="separator"></div>
-      <div id="shuffle"></div>
+      <div id="shuffle-box">
+        <button type="submit" class="shuffle">&mdash;</button>
+      </div>
     </div>
+
+    <script src="src/public/javascripts/index.mjs" type="module"></script>
   </body>
 </html>
